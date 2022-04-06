@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Sobral</title>
+</head>
+<body>
+    
+    <h1> Sistema que calcula sua idade </h1>
+    <p>Que ano que você nasceu ? </p>
+    <input id="AnoNascimentoInput"> <br>
+    <p>Qual é o ano atual ? </p>
+    <input id="AnoAtualInput"> <br>
+    <button onclick="idade()"> calcular </button>
+    <p id="resultado">Resultado</p>
+</body>
+
+<script>
+    function idade()
+    {
+        var AnoNascimento, Resultado, AnoAtual;
+        AnoNascimento = document.getElementById("AnoNascimentoInput").value;
+        AnoAtual = document.getElementById("AnoAtualInput").value;
+        Resultado = AnoAtual - AnoNascimento;
+        document.getElementById("resultado").innerHTML = Resultado;
+    }
+</script>
+</html>
